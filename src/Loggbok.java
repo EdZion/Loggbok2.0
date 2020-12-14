@@ -21,9 +21,7 @@ public class Loggbok {
         return text;
     }
 
-    public String getLog() {
-        return log;
-    }
+    public String getLog() { return log; }
 
     public void setText(String text) {
         this.text = text;
