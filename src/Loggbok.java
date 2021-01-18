@@ -1,11 +1,16 @@
 import java.io.*;
 
+/**
+ * Loggbok skapar och sparar data i Strings.
+ */
 public class Loggbok {
     private String data[];
     private String textFile = "data.txt";
 
-
-
+    /**
+     * Metoden skapar och läser in en fil med hjälp utav en bufferdWriter och en bufferdReader.
+     * @throws IOException Kastar ett error meddelande om de blir fel.
+     */
 
 
     private void CharStreamExample() throws IOException {
@@ -18,7 +23,6 @@ public class Loggbok {
         } finally {
             out.close();
         }
-
         BufferedReader in = null;
         try {
             in = new BufferedReader(new FileReader(textFile));
